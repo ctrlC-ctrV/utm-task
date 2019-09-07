@@ -1,0 +1,10 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#0e331a",
+    "titleBar.activeBackground": "#0c2f17",
+    "titleBar.inactiveBackground": "#0c2f1799",
+    "statusBar.background": "#0c2f17",
+    "statusBarItem.hoverBackground": "#16582b"
+  },
+  "peacock.color": "#0c2f17"
+}
