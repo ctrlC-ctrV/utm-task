@@ -1,0 +1,17 @@
+.user {
+  position: absolute;
+  right: 50px;
+  width: 100px;
+  border-color: black;
+}
+
+.user-icon-left {
+  position: relative;
+  float: left;
+}
+
+.user-icon-right {
+  position: relative;
+  float: right;
+}
+
