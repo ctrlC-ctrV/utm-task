@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
+import { HomeRoutingModule } from './home-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
@@ -13,16 +13,15 @@ import {
   MatRippleModule
 } from '@angular/material';
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { HomeRoutingModule } from './home/home-routing.module';
-import { ToolBarComponent } from './home/tool-bar/tool-bar.component';
+import { HomeComponent } from './home.component';
+import { DialogExampleComponent } from './dialog-example/dialog-example.component';
+import { CenterComponent } from './center/center.component';
+import { ToolBarComponent } from './tool-bar/tool-bar.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [HomeComponent, DialogExampleComponent, CenterComponent, ToolBarComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
     ReactiveFormsModule,
@@ -33,9 +32,9 @@ import { ToolBarComponent } from './home/tool-bar/tool-bar.component';
     FormsModule,
     MatIconModule,
     MatRippleModule,
-    AppRoutingModule,
+    HomeRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [HomeComponent]
 })
 export class AppModule { }
