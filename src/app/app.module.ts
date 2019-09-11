@@ -8,14 +8,17 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import {
   MatIconModule,
   MatToolbarModule,
   MatInputModule,
   MatButtonModule,
   MatFormFieldModule,
-  MatDialogModule
+  MatDialogModule,
+  MatRippleModule
 } from '@angular/material';
+import { CenterComponent } from './center/center.component';
 
 const modules = [
   BrowserModule,
@@ -29,10 +32,11 @@ const modules = [
   MatInputModule,
   FormsModule,
   MatIconModule,
+  MatRippleModule,
 ];
 
 @NgModule({
-  declarations: [AppComponent, ToolBarComponent, DialogExampleComponent],
+  declarations: [AppComponent, ToolBarComponent, DialogExampleComponent, CenterComponent],
   entryComponents: [DialogExampleComponent],
   imports: [...modules],
   exports: [...modules],
