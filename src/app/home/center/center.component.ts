@@ -10,8 +10,7 @@ import { MatDialog } from '@angular/material';
 export class CenterComponent {
   constructor(public dialog: MatDialog) { }
 
-  Arr = Array;
-  num = 20;
+  points = [1, 2, 3, 4, 5];
 
   centered = false;
   disabled = false;

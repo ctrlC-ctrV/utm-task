@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HomeRoutingModule } from './home-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
@@ -13,13 +12,14 @@ import {
   MatRippleModule
 } from '@angular/material';
 
-import { HomeComponent } from './home.component';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 import { CenterComponent } from './center/center.component';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
+import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
-  declarations: [HomeComponent, DialogExampleComponent, CenterComponent, ToolBarComponent],
+  declarations: [DialogExampleComponent, CenterComponent, ToolBarComponent],
+  entryComponents: [DialogExampleComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -32,9 +32,9 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
     FormsModule,
     MatIconModule,
     MatRippleModule,
-    HomeRoutingModule
+    HomeRoutingModule,
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: []
 })
-export class AppModule { }
+export class HomeModule { }
