@@ -1,0 +1,8 @@
+.play-area {
+height: 500px;
+    border: 2px black;
+    position: absolute;
+    background: cadetblue;
+    right: 50px;
+    left: 50px;
+}

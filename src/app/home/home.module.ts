@@ -12,14 +12,13 @@ import {
   MatRippleModule
 } from '@angular/material';
 
-import { DialogExampleComponent } from './dialog-example/dialog-example.component';
-import { CenterComponent } from './center/center.component';
+import { UserDialogComponent } from './user-dialog/user-dialog.component';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
 import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
-  declarations: [DialogExampleComponent, CenterComponent, ToolBarComponent],
-  entryComponents: [DialogExampleComponent],
+  declarations: [UserDialogComponent, ToolBarComponent],
+  entryComponents: [UserDialogComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

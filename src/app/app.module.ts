@@ -4,6 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
+import { PlayModule } from './play/play.module';
+import { UserDialogComponent } from './home/user-dialog/user-dialog.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -11,8 +13,9 @@ import { HomeModule } from './home/home.module';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
+    PlayModule
   ],
-  providers: [],
+  providers: [UserDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

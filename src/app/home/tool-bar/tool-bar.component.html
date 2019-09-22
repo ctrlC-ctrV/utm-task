@@ -1,6 +1,7 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <span>My App</span>
+    <button mat-raised-button color="accent" (click)="openDialog()">Get Started</button>
     <div class="user">
       <span>{{userName}}</span>
       <div [class]="userPosition">
